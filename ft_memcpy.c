@@ -6,13 +6,13 @@
 /*   By: tmulaud <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/19 12:16:36 by tmulaud           #+#    #+#             */
-/*   Updated: 2018/08/28 11:14:50 by tmulaud          ###   ########.fr       */
+/*   Updated: 2018/08/29 16:58:13 by tmulaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_ls.h"
 
-void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	char	*destblock;
 	char	*srcblock;

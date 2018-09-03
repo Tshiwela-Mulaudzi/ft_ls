@@ -6,7 +6,7 @@
 /*   By: tmulaud <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/23 16:45:43 by tmulaud           #+#    #+#             */
-/*   Updated: 2018/08/28 11:17:17 by tmulaud          ###   ########.fr       */
+/*   Updated: 2018/08/29 15:56:31 by tmulaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,12 +41,12 @@ void	sort_list(t_dir **head, int (*cmp)(t_dir, t_dir), int done)
 		{
 			if (cmp(*tempo, *next) > 0)
 			{
-				tempo ->next = next->next;
+				tempo->next = next->next;
 				next->next = tempo;
 				*source = next;
 				done = 0;
 			}
-			source = &tempo ->next;
+			source = &tempo->next;
 			tempo = next;
 			next = next->next;
 		}

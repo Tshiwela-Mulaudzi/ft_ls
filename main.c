@@ -6,7 +6,7 @@
 /*   By: tmulaud <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/23 16:50:38 by tmulaud           #+#    #+#             */
-/*   Updated: 2018/08/28 14:20:16 by tmulaud          ###   ########.fr       */
+/*   Updated: 2018/08/29 16:07:12 by tmulaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,7 @@ int		main(int argc, char **argv)
 	{
 		if (argv[i][0] != '-' && (tempo = (t_dir *)malloc(sizeof(t_dir))))
 		{
-			tempo ->dir = argv[i];
-			tempo ->next = input.list;
+			tempo->next = input.list;
 			input.list = tempo;
 			ft_putstr("ft_ls: ");
 			ft_putstr(argv[i]);

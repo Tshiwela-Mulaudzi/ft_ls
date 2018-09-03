@@ -6,7 +6,7 @@
 /*   By: tmulaud <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/23 12:25:24 by tmulaud           #+#    #+#             */
-/*   Updated: 2018/08/28 15:46:20 by tmulaud          ###   ########.fr       */
+/*   Updated: 2018/08/30 12:09:15 by tmulaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ void	ft_ls(t_env *input)
 	while (tempo != NULL)
 	{
 		execute(tempo->dir, input);
-		tempo = tempo ->next;
+		tempo = tempo->next;
 	}
 }
-
